@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: #d3b6f6;
+            color: #1a0d3a;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #aa71ff;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 5px; 
+        }
+        nav a:hover {
+            background-color: #b53de4;
+            color: #ffffff; 
+                }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #d3b6f6;
+            color: #1a0d3a;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Day-4-5 of coding </h1>
+        <div class="hamburger" oneclick="togglemenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+            <li><a href="#index.html">index.html</a></li>
+            <li><a href="#style.css">style.css</a></li>
+            <li><a href="#script.js">script.js</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>todays tags implements and classes that i used below-</h2>
+        <p>para explaining it</p>
+    </main>
+    <footer>
+        daily 1 project if possible.
+    </footer>
+    <script>
+        function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle('active');
+} </script>
+</body>
+</html>
