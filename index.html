@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dev NewBie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         header {
             background-color: #d3b6f6;
@@ -38,11 +40,53 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+        details {
+  background-color: #1e1e1e; /* Dark mode friendly */
+  color: #f0f0f0;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #444;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+details:hover {
+  transform: scale(1.02);
+  background-color: #2a2a2a;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+details[open] summary::after {
+  content: " ▼";
+  color: #5e1c7c;
+}
+
+details summary::after {
+  content: " ▶";
+  color: #aaa;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: #af1cdb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Day-6 of coding </h1>
+        <h1>Day- 7 of coding </h1>
         <div class="hamburger" oneclick="togglemenu()">
             <div></div>
             <div></div>
@@ -66,16 +110,68 @@
 <section style="padding: 20px; background-color: #e3d7fc;">
   <h2>Daily work progress</h2>
   <ul style="list-style: none; padding-left: 0;">
-    <li><a href="https://x.com/Ayudhi07/status/1931423391925645591" target="_blank">Day 6 Of Code - Git Push+ Netlify Deployment</a></li>
-    <li><a href="https://x.com/Ayudhi07/status/1931070621238051096" target="_blank">Day 5 Of Code - Fixed Prev Errors On COde, Started GIT</a></li>
-    <li><a href="https://x.com/Ayudhi07/status/1930704074086732283" target="_blank">Day 4 Of Code - Practiced HTML tags, css Flexbox</a></li>
-    <li><a href="https://x.com/Ayudhi07/status/1930333060739850395" target="_blank">Day 3 Of Code - Revisted Weak Areas</a></li>
-    <li><a href="https://x.com/Ayudhi07/status/1929976480689267148" target="_blank">Day 2 Of Code - JS BASICS</a></li>
-    <li><a href="https://x.com/Ayudhi07/status/1929598757600886912" target="_blank">Day 1 Of Code - CSS project</a></li>
+    
+    <details>
+  <summary>Day 1 – HTML, CSS, Started JS</summary>
+  <p>- Covered HTML and CSS a while back <br>
+    - Started JS <br>
+    - Completed this on freecodecamp</p>
+  <a href="https://x.com/Ayudhi07/status/1929598757600886912" target="_blank">Day 1 Of Code - CSS project</a>
+</details>
+<details>
+  <summary>Day 2 – JS BASICS </summary>
+  <p>-Did JS basics <br>
+    -Variables (learned how to declare variables using let, const, & var)<br>
+    -Data Types<br>
+    -Operators (explored arithmetic, comparison, and logical operators)-Started JS on codefreecamp</p>
+  <a href="https://x.com/Ayudhi07/status/1929976480689267148" target="_blank">Day 2 Of Code - JS BASICS</a>
+</details>
+
+<details>
+  <summary>Day 3 – Revisted Weak Areas</summary>
+  <p>- Continued JavaScript basics<br>
+     - Practiced with variables, functions<br>
+     -did few part of projects on codefreecamp</p>
+  <a href="https://x.com/Ayudhi07/status/1930333060739850395" target="_blank">Day 3 Of Code - Revisted Weak Areas</a>
+</details>
+
+<details>
+  <summary>Day 4 – Practiced HTML tags, css Flexbox</summary>
+  <p>•Practiced using semantic html tags<br>
+-Created a basic responsive layout<br>
+-Learned to style with css flexbox for nav,padding/margin for layout.<br>
+-Tried to implement a hamburger menu with JavaScript </p>
+  <a href="https://x.com/Ayudhi07/status/1930704074086732283" target="_blank">Day 4 Of Code - Practiced HTML tags, css Flexbox</a>
+</details>
+
+<details>
+  <summary>Day 5 – Fixed Prev Errors On COde, Started GIT</summary>
+  <p>-Fixed some old errors (from day 4)<br>
+- Continued freeCodeCamp projects.<br>
+- Started learning Git </p>
+  <a href="https://x.com/Ayudhi07/status/1931070621238051096" target="_blank">Day 5 Of Code - Fixed Prev Errors On COde, Started GIT</a>
+</details>
+
+<details>
+  <summary>Day 6 – Git Push+ Netlify Deployment</summary>
+  <p>-Pushed first site to GitHub.<br>
+-Deployed it using Netlify.<br>
+-Documented structure & HTML tags used.<br>
+-LIVE NOW : https://dancing-peony-239962.netlify.app</p>
+  <a href="https://x.com/Ayudhi07/status/1931423391925645591" target="_blank">Day 6 Of Code - Git Push+ Netlify Deployment</a>
+</details>
+<details>
+  <summary>Day 7 – Build Log Feature & UI Enhancements</summary>
+  <p>- Added collapsible daily logs using HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code><br>
+     - Documented work from Day 1 to 7<br>
+     - Improved design with hover effects and clean structure<br>
+     -Bit porject stuff on freecodecamp</p>
+  <a href="https://x.com/Ayudhi07/status/1931797507811815456" target="_blank">Day 7 Of Code - Build Log UI</a>
+</details>
   </ul>
 </section>
 <footer style="text-align:center; font-size: 14px; padding: 10px;">
-  <p>🚀 Deployed via Netlify | Updated: Day 6</p>
+  <p>🚀 Deployed via Netlify | Updated: Day 7</p>
 </footer>
 </body>
 </html>
